@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/Normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <style type="text/css">
+        .banner {
+            height: 60rem;
+            background: url('../images/img_home_banner@2x.png') no-repeat center / cover;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner_content {
+            color: white;
+            width: 80rem;
+            height: 25.92rem;
+            margin: 16.83rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .banner_content p:nth-child(1) {
+            /*font-family: PingFangSC-Medium;*/
+            font-size: 64px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: left;
+        }
+
+        .banner_content p:nth-child(3) {
+            /*font-family: PingFangSC-Regular;*/
+            font-size: 24px;
+            color: #FFFFFF;
+            letter-spacing: 5.33px;
+        }
+
+        .content_item {
+            overflow: hidden;
+        }
+
+        .content_item_text {
+            width: 80rem;
+            margin: 11.46rem auto 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .content_item_text>p {
+            margin-bottom: 4.67rem;
+        }
+
+        .content_item_text>p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+    </header>
+    <div class="content">
+        <section class="banner">
+            <div class="banner_content">
+                <p>向Apple学习收银</p>
+                <p class="short_line_blue"></p>
+                <p>最直观简约的零售方案-移动支付</p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p style="background: url('../images/img_home_img5@2x.png') no-repeat center / 100%;">
+                    <img src='../images/img_home_img5@2x.png' style="position: relative;z-index: -1; width: 100%;display: block;">
+                </p>
+                <p class="big_know_more"><a href="article1.html">学到更多</a></p>
+            </div>
+        </section>
+    </div>
+<footer class="footer">
+    
+</footer>
+<script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/interact.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script type="text/babel" src="../js/my-react.js"></script>
+</body>
+
+</html>

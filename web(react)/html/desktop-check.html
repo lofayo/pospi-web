@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <style type="text/css">
+        .content section:nth-child(2n) {
+            background: #F9F9F9;
+            flex-direction: row-reverse;
+        }
+
+        .empty_know_more {
+            color: #4286F3;
+            border: 2px solid #4286F3;
+            background: #fff;
+        }
+
+        .empty_know_more:hover {
+            color: #fff;
+            background: #4286F3;
+        }
+
+        section {
+            padding: 13.32rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text_content {
+            width: 50%;
+        }
+
+        .img_content {
+            width: 40%;
+        }
+
+        .text_content p {
+            margin-bottom: 3.13rem;
+        }
+
+        .text_content p:nth-child(1) {
+            /*font-family: PingFangSC-Regular;*/
+            font-size: 36px;
+            color: #111111;
+        }
+
+        .text_content p:nth-child(2) {
+            /*font-family: PingFangSC-Regular;*/
+            font-size: 36px;
+            color: #4286F3;
+        }
+
+        .text_content p:nth-child(3) {
+            /*font-family: PingFangSC-Regular;*/
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .small_logo {
+            display: inline-block;
+            width: 9rem;
+            height: 4.17rem;
+            margin-right: 2rem;
+            vertical-align: middle;
+        }
+
+        footer {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+    </header>
+    <div class="content">
+        <section>
+            <div class="text_content">
+                <p><span class="small_logo" style="background: url('../images/img_desktop_star@1x.png') no-repeat center / contain"></span>mPOP</p>
+                <p>简约实用的智能钱箱打印一体机</p>
+                <p>适用于所有主流移动操作系统，小巧时尚、功能强劲
+                    <br>紧凑型移动 POS 设计，可在仸意位置摆放
+                    <br>每秒 100 毫米打印，蓝牙联机，一条电源线便能展开全面的运作
+                    <br>四个直立式钞票间隔及灵活的六或八个硬币槽
+                </p>
+                <p class="know_more empty_know_more" onclick="window.open('../pdf/英文mPOP.pdf', '_blank')">了解更多</p>
+            </div>
+            <div class="img_content" style="background: url('../images/img_desktop_mpop@1x.png') no-repeat center / contain"></div>
+        </section>
+        <section>
+            <div class="text_content">
+                <p><span class="small_logo" style="background: url('../images/img_desktop_pax@1x.png') no-repeat center / contain"></span>E500</p>
+                <p>先进时尚的一体化智能终端</p>
+                <p>基于 Android 系统，高度集成各种功能模块
+                    <br> 支持全渠道支付，配备自裁切打印机
+                    <br>大容量电池提供超长续航
+                    <br>立即拥有最新科技，以获得更高的客流量及更好的商业管理
+                </p>
+                <p class="know_more empty_know_more" onclick="window.open('../pdf/E500中文 .pdf', '_blank')">了解更多</p>
+            </div>
+            <div class="img_content" style="background: url('../images/img_desktop_e500@1x.png') no-repeat center / contain"></div>
+        </section>
+        <section>
+            <div class="text_content">
+                <p><span class="small_logo" style="background: url('../images/img_desktop_pax@1x.png') no-repeat center / contain"></span>D800</p>
+                <p>新一代台式智能终端</p>
+                <p>采用平板风格设计，优雅时尚
+                    <br>7寸彩色电容触摸屏及多媒体功能，给您带来完美的自助体验和互动
+                    <br>特别适用于金融自助、商品零售管理等应用
+                    <br>满足银行卡刷卡消费，自助缴费等电子支付功能
+                    <br>同时可具备商品进销存管理、目录销售、广告发布等功能
+                </p>
+                <p class="know_more empty_know_more" onclick="window.open('../pdf/中文  PAX D800.pdf', '_blank')">了解更多</p>
+            </div>
+            <div class="img_content" style="background: url('../images/img_desktop_d800@1x.png') no-repeat center / contain"></div>
+        </section>
+    </div>
+<footer class="footer">
+    
+</footer>
+<script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/interact.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script type="text/babel" src="../js/my-react.js"></script>
+</body>
+
+</html>
