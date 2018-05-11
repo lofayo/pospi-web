@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/common-en.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <style type="text/css">
+        .banner {
+            height: 60rem;
+            background: url('../images/img_home_banner@2x.png') no-repeat center / cover;
+            overflow: hidden;
+            position: relative;
+        }
+        /*.banner::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            background: #212529;
+            z-index: 1;
+        }*/
+
+        .banner_content {
+            color: white;
+            width: 80rem;
+            height: 25.92rem;
+            margin: 16.83rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .banner_content p:nth-child(1) {
+            /*font-family: PingFangSC-Medium;*/
+            font-size: 64px;
+            color: #FFFFFF;
+            letter-spacing-error: 0;
+            text-align: left;
+        }
+
+        .banner_content p:nth-child(3) {
+            /*font-family: PingFangSC-Regular;*/
+            font-size: 24px;
+            color: #FFFFFF;
+            letter-spacing-error: 5.33px;
+        }
+
+        .content_item {
+            overflow: hidden;
+        }
+
+        .content_item.dark_bg {
+            background: #F6F6F6;
+        }
+
+        .content_item_text {
+            width: 80rem;
+            margin: 11.46rem auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .content_item_text>p {
+            margin-bottom: 4.67rem;
+        }
+
+        .content_item_text>p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content_item_text>p:nth-child(1) {
+            /*font-family: PingFangSC-Semibold;*/
+            font-size: 36px;
+            color: #333333;
+            letter-spacing-error: 0;
+            text-align: center;
+        }
+
+        .content_item_text>p:nth-child(3) {
+            /*font-family: PingFangSC-Regular;*/
+            font-size: 14px;
+            color: #333333;
+            letter-spacing-error: 3.11px;
+            text-align: center;
+        }
+
+        .has_bg>.content_item_text>p {
+            color: white;
+        }
+
+        footer {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="change_samll_header_css">
+        <div class="header_content">
+            <a href="home-page.html" style="display: flex;"><img class="logo" src="../images/img_Navigation_LOGO@2x.png"></a>
+            <ul class="header_nav">
+                <li class="nav_item"><a href="home-page.html"><span>HOME</span></a></li>
+                <li class="nav_item"><a href="javascript:void(0)"><span>PRODUCTS & SERVICES</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="all-in-one.html">All-in-One Solution</a></li>
+                        <li><a href="solution.html">Cloud-based Solution</a></li>
+                        <li><a href="payment.html">Aggregate Payment</a></li>
+                        <li><a href="access.html">Seamless Access</a></li>
+                        <li><a href="service.html">Our Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="customer.html"><span>CUSTOMERS</span></a>
+                </li>
+                <li class="nav_item"><a href="source.html"><span>RESOURCES</span></a>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)">
+                    <span>HARDWARE</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li style=" width: 23.83rem;"><a href="mobile-pos.html"><img src="../images/icon_Navigation_mpos.png" data-src="../images/icon_Navigation_mpos_Selected.png" alt="">Smart Handheld Mobile POS</a></li>
+                        <li style=" width: 23.83rem;"><a href="desktop-check.html"><img src="../images/icon_Navigation_Desktop.png" data-src="../images/icon_Navigation_Desktop_Selected.png" alt="">Desktop Cash Register Machine</a></li>
+                        <li style=" width: 23.83rem;"><a href="printer.html"><img src="../images/icon_Navigation_Printer.png" data-src="../images/icon_Navigation_Printer_Selected.png" alt="">Receipt Printer</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="javascript:void(0)"><span>ABOUT</span></a>
+                    <ul class="nav_item_list" style="display: none;">
+                        <li><a href="introduce.html">Company</a></li>
+                        <li><a href="parter.html">Partners</a></li>
+                        <li><a href="news.html">News reports</a></li>
+                        <li><a href="join-us.html">Join us</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a style="padding: 4px;" href="../html/home-page.html">简</a>|<a style="padding: 4px;" href="../html-en/home-page.html">EN</a>
+                </li>
+                <li class="nav_item"><a href="contact-us.html"><span>CONTACT US</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <section class="banner">
+            <div class="banner_content">
+                <p>Learn from APPLE cashier</p>
+                <p class="short_line_blue"></p>
+                <p>The most intuitive and simple retail solution - mobile payment</p>
+                <p class="big_know_more"><a href="like-apple.html">Learn More</a></p>
+                <p>
+                    <a href="news.html">
+                    <span style="display:inline-block;width: 80px;height: 80px;background: url('../images/sprite.png') no-repeat -878px -2px;float: right;margin-bottom: -80px;box-shadow: 0 20px 40px 0 rgba(66,134,243,0.40);"></span>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p>The survival of the physical store: It's either that or it won't take up any of your time, or it will give you the ultimate experience
+                </p>
+                <p class="short_line_blue"></p>
+                <p>Internet technology saves consumers time and makes them more agile to make comparisons and choices. This leads to a more professional trend of consumers. Every retailer has a deep understanding. If we can't adapt to this trend, we will be abandoned by the Internet</p>
+            </div>
+        </section>
+        <section class="content_item has_bg" style="background: url('../images/img_home_img1@2x.png') no-repeat center / cover;">
+            <div class="content_item_text">
+                <p>It is not only time that can prove quality, but also the choice of customers
+                </p>
+                <p class="short_line_blue"></p>
+                <p>
+                    POSPi uses advanced technology to integrate software and hardware together to integrate a whole new retail plan, improve the working efficiency and enhance customer shopping experience to promote sales and reduce operating costs
+                    <br>
+                    <br> POSPi is dedicated to creating the most suitable products for our clients, to customize and make each product unique, designed to bring the best product and the best experience to the customer
+                </p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p>Our customers
+                </p>
+                <p class="short_line_blue"></p>
+                <p style="background: transparent url('../images/img_home_img2@2x.png') no-repeat center / 100%;">
+                    <img src='../images/img_home_img2@2x.png' style="position: relative;z-index: -1; width: 100%;">
+                </p>
+                <p class="big_know_more"><a href="customer.html">Learn More</a></p>
+            </div>
+        </section>
+        <section class="content_item dark_bg">
+            <div class="content_item_text">
+                <p>Smart retail All - in - One solution</p>
+                <p class="short_line_blue"></p>
+                <p>Through POSPi's iPhone, iPod touch, and iPad mobile app, you can get your order in any corner of the store, making it more professional and thoughtful for the customer in the sales process </p>
+                <p style="background: transparent url('../images/img_home_img3_EN.png') no-repeat center / 100%;">
+                    <img src='../images/img_home_img3@2x.png' style="position: relative;z-index: -1; width: 100%;">
+                </p>
+                <p class="big_know_more"><a href="all-in-one.html">Learn More</a></p>
+            </div>
+        </section>
+        <section class="content_item">
+            <div class="content_item_text">
+                <p>Full channel payment interface, one-stop service platform
+                </p>
+                <p class="short_line_blue"></p>
+                <p>PassPi provides simple, safe and reliable traditional and mobile Internet financial payment methods, including APi, SDK, traditional POS, smart POS and other payment terminal integration solutions. Full payment solutions and extensive integration payment experience, allowing our clients to win in the mobile Internet era!</p>
+                <p class="big_know_more"><a href="payment.html">Learn More</a></p>
+            </div>
+        </section>
+        <section class="content_item has_bg" style="background: url('../images/img_home_img4@2x.png') no-repeat center / cover;">
+            <div class="content_item_text">
+                <p>Seamless access</p>
+                <p class="short_line_blue"></p>
+                <p>Traditional international first-line brand retail is a PC-based solution. Mobile POS can seamlessly access its existing ERP, CRM and cash register system with low cost, and provide a simple and efficient Mobile cash payment scheme</p>
+                <p class="big_know_more"><a href="access.html">Learn More</a></p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <hr class="footer_hr">
+        <div class="about_us">
+            <ul>
+                <li class="footer_logo"></li>
+            </ul>
+            <ul>
+                <li>PRODUCTS & SERVICES</li>
+                <li><a href="all-in-one.html">All-in-One Solution</a></li>
+                <li><a href="solution.html">Cloud-based Solution</a></li>
+                <li><a href="payment.html">Aggregate Payment</a></li>
+                <li><a href="access.html">Seamless Access</a></li>
+                <li><a href="service.html">Our Services</a></li>
+            </ul>
+            <ul>
+                <li>HARDWARE</li>
+                <li><a href="mobile-pos.html">Smart Handheld Mobile POS</a></li>
+                <li><a href="desktop-check.html">Desktop Cash Register Machine</a></li>
+                <li><a href="printer.html">Receipt Printer</a></li>
+            </ul>
+            <ul>
+                <li>ABOUT</li>
+                <li><a href="introduce.html">Company</a></li>
+                <li><a href="parter.html">Partners</a></li>
+                <li><a href="news.html">News reports</a></li>
+                <li><a href="join-us.html">Join us</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact-us.html" style="/*font-family: PingFangSC-Semibold;*/font-size: 14px;color: #464855;line-height: normal;">CONTACT US</a></li>
+            </ul>
+            <ul class="foot_link_logo" style="width: 185px;">
+                <li style="color: #8C8C8C;margin-top: 0;">Focus on our community</li>
+                <li style="clear: left;"><a target="_blank" href="javascript:void(0)"><img src="../images/img_facebook_logo.png" data-src="../images/img_facebook_logo_Selected.png" alt=""></a></li>
+                <li><a target="_blank" href="javascript:void(0)"><img src="../images/img_LinkedIn_logo.png" data-src="../images/img_LinkedIn_logo_Selected.png" alt=""></a></li>
+                <li style="margin-right: 0;"><a target="_blank" href="javascript:void(0)"><img src="../images/img_WeChat_logo.png" data-src="../images/img_WeChat_logo_Selected.png" alt=""></a></li>
+                <li><a target="_blank" href="http://id.tudou.com/pospisolutions"><img src="../images/img_youku_logo.png" data-src="../images/img_youku_logo_Selected.png" alt=""></a></li>
+                <li><a target="_blank" href="javascript:void(0)"><img src="../images/img_youtube_logo.png" data-src="../images/img_youtube_logo_Selected.png" alt=""></a></li>
+            </ul>
+        </div>
+        <hr class="footer_hr">
+        <div class="copyright">
+            © All rights reserved. | ICP证：沪ICP备15028992号-1
+        </div>
+    </footer>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/interact.js"></script>
+</body>
+
+</html>

@@ -37,49 +37,59 @@
         .content_item_text>p:nth-child(6) {
             width: 69rem;
         }
+
+        .mini_short_dashed {
+            width: 80px;
+            height: 2px;
+            background-image: url('../images/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -655px -32px;
+        }
     </style>
 </head>
 
 <body>
-   <header>
+        <header>
         <div class="header_content">
             <a href="home-page.html" style="display: flex;"><img class="logo" src="../images/img_Navigation_LOGO@2x.png"></a>
             <ul class="header_nav">
-                <li class="nav_item"><a href="home-page.html"><span>首页</span></a></li>
-                <li class="nav_item"><a href="javascript:void(0)"><span>产品与服务</span></a>
-                    <ul class="nav_item_list" style="display: none;">
-                        <li><a href="all-in-one.html">All-in-One 解决方案</a></li>
-                        <li><a href="solution.html">基于云处理的解决方案</a></li>
-                        <li><a href="payment.html">聚合支付</a></li>
-                        <li><a href="access.html">无缝接入</a></li>
-                        <li><a href="service.html">我们的服务</a></li>
-                    </ul>
-                </li>
-                <li class="nav_item"><a href="customer.html"><span>典型客户</span></a>
-                </li>
-                <li class="nav_item"><a href="source.html"><span>资源</span></a>
-                </li>
-                <li class="nav_item"><a href="javascript:void(0)">
+<li class="nav_item"><a href="home-page.html"><span>首页</span></a></li>
+<li class="nav_item"><a href="javascript:void(0)"><span>产品与服务</span></a>
+    <ul class="nav_item_list" style="display: none;">
+        <li><a href="all-in-one.html">All-in-One 解决方案</a></li>
+        <li><a href="solution.html">基于云处理的解决方案</a></li>
+        <li><a href="payment.html">聚合支付</a></li>
+        <li><a href="access.html">无缝接入</a></li>
+        <li><a href="service.html">我们的服务</a></li>
+    </ul>
+</li>
+<li class="nav_item"><a href="customer.html"><span>典型客户</span></a>
+</li>
+<li class="nav_item"><a href="source.html"><span>资源</span></a>
+</li>
+<li class="nav_item"><a href="javascript:void(0)">
                     <span>硬件</span></a>
-                    <ul class="nav_item_list" style="display: none;">
-                        <li><a href="mobile-pos.html"><img src="../images/icon_Navigation_mpos.png" data-src="../images/icon_Navigation_mpos_Selected.png" alt="">手持移动智能 POS</a></li>
-                        <li><a href="desktop-check.html"><img src="../images/icon_Navigation_Desktop.png" data-src="../images/icon_Navigation_Desktop_Selected.png" alt="">台式收银一体机</a></li>
-                        <li><a href="printer.html"><img src="../images/icon_Navigation_Printer.png" data-src="../images/icon_Navigation_Printer_Selected.png" alt="">票据打印机</a></li>
-                    </ul>
-                </li>
-                <li class="nav_item"><a href="javascript:void(0)"><span>关于</span></a>
-                    <ul class="nav_item_list" style="display: none;">
-                        <li><a href="introduce.html">公司介绍</a></li>
-                        <li><a href="parter.html">合作伙伴</a></li>
-                        <li><a href="news.html">新闻报道</a></li>
-                        <li><a href="join-us.html">加入我们</a></li>
-                    </ul>
-                </li>
-                <li class="nav_item"><a href="contact-us.html"><span>联系我们</span></a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <ul class="nav_item_list" style="display: none;">
+        <li><a href="mobile-pos.html"><img src="../images/icon_Navigation_mpos.png" data-src="../images/icon_Navigation_mpos_Selected.png" alt="">手持移动智能 POS</a></li>
+        <li><a href="desktop-check.html"><img src="../images/icon_Navigation_Desktop.png" data-src="../images/icon_Navigation_Desktop_Selected.png" alt="">台式收银一体机</a></li>
+        <li><a href="printer.html"><img src="../images/icon_Navigation_Printer.png" data-src="../images/icon_Navigation_Printer_Selected.png" alt="">票据打印机</a></li>
+    </ul>
+</li>
+<li class="nav_item"><a href="javascript:void(0)"><span>关于</span></a>
+    <ul class="nav_item_list" style="display: none;">
+        <li><a href="introduce.html">公司介绍</a></li>
+        <li><a href="parter.html">合作伙伴</a></li>
+        <li><a href="news.html">新闻报道</a></li>
+        <li><a href="join-us.html">加入我们</a></li>
+    </ul>
+</li>
+<li class="nav_item"><a style="padding: 4px;" href="../html/home-page.html">简</a>|<a style="padding: 4px;" href="../html-en/home-page.html">EN</a>
+</li>
+<li class="nav_item"><a href="contact-us.html"><span>联系我们</span></a>
+</li>
+</ul>
+</div>
+</header>
     <div class="content">
         <section class="banner" style="background: url('../images/img_Access_banner@2x.png') no-repeat center / cover;">
             <div class="banner_content">
@@ -97,8 +107,7 @@
                     <img src="../images/img_Access_img1@2x.png" style="position: relative;z-index: -1; width: 100%;display: block;">
                 </p>
                 <p>MPOS数据流，其中MPOS为APP端应用，V8即为原有的收银系统。其中中间部分即为由中间件构成的服务器，包含了支付系统，账单系统以及支付方式的接口和中间库，中间库负责接收MPOS 上传的数据和反馈MPOS需要的数据，例如：商品信息、店铺信息等等。</p>
-                <p>
-                    <img style="width: 6.67rem;height: 0.17rem;margin: 0;" src="../images/img_Access_img2@2x.png">
+                <p class="mini_short_dashed">
                 </p>
                 <p>由于国际品牌具有庞大的跨国业务，业务量比较大，跨区域支付过程繁琐， POSPi 通过这两种模式，在不影响原有系统下可以实现无缝接入国际一线品牌 ERP, 做到真正的高效移动支付，减少不必要的繁琐支付过程，解决了这一大痛点。</p>
             </div>
@@ -111,8 +120,7 @@
                     <img src='../images/img_Access_img3@2x.png' style="position: relative;z-index: -1; width: 100%;display: block;">
                 </p>
                 <p>图二展示了在店铺PC POS和移动POS端接入了S-Store 服务器，通过数据交换以及应用程序接口，做到了数据实时上传回流，方便快捷地接入企业客户的ERP服务器中。</p>
-                <p>
-                    <img style="width: 6.67rem;height: 0.17rem;margin: 0;" src="../images/img_Access_img2@2x.png">
+                <p class="mini_short_dashed">
                 </p>
                 <p> • S-Store 无缝对接原有的收银系统，没有独立业务操作入口，仅作为原有的收银系统 Mobile POS 数据接口服务使用，对原业务操作无影响；
                     <br> • 可与传统 POS 并行, 也可独立使用 Mobile POS。</p>
@@ -126,8 +134,7 @@
                     <img src='../images/img_Access_img4@2x.png' style="position: relative;z-index: -1; width: 100%;display: block;">
                 </p>
                 <p>图三展示了店铺Mobile POS 基于VPN & Internet通过APi 数据交换以及应用程序接口，做到了数据实时上传反馈，方便快捷地接入企业客户的ERP服务器中。 </p>
-                <p>
-                    <img style="width: 6.67rem;height: 0.17rem;margin: 0;" src="../images/img_Access_img2@2x.png">
+                <p class="mini_short_dashed">
                 </p>
                 <p>• 新技术框架，独立的促销引擎入口，功能拓展容易；
                     <br> • 完全基于移动技术框架，后期门店硬件及网络投入成本低，可实现门店快速、灵活的部署能力；
@@ -135,7 +142,7 @@
             </div>
         </section>
     </div>
-<footer>
+    <footer>
         <hr class="footer_hr">
         <div class="about_us">
             <ul>

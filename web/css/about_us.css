@@ -80,10 +80,8 @@ nav,
 }
 
 nav li {
-    width: 7.33rem;
-    height: 3.33rem;
-    line-height: 3.33rem;
     /*font-family: PingFangSC-Semibold;*/
+    padding: 10px 16px;
     font-size: 14px;
     color: #B3B3B3;
     margin-right: 1rem;
