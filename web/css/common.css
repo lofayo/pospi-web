@@ -91,7 +91,7 @@ header {
     padding: 0 1.2rem;
 }
 
-.nav_item span {
+.nav_item .nav_item_title {
     display: inline-block;
     border-bottom: 0.5rem solid white;
     line-height: 62px;
@@ -113,7 +113,29 @@ header {
     border-radius: 15px;
 }
 
+.has_item_logo .contain_small_logo {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
 
+.contain_small_logo i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.has_item_logo .color_logo {
+    opacity: 0;
+}
+
+.has_item_logo li:hover .color_logo {
+    opacity: 1;
+}
 
 .nav_item_list li {
     width: 20.83rem;
@@ -201,6 +223,27 @@ footer {
     background-image: url('../images/sprite.png');
     background-repeat: no-repeat;
     background-position: -137px -25px;
+}
+
+.foot_link_logo a {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 50px;
+}
+
+.foot_link_logo span {
+    position: absolute;
+    width: 48px;
+    height: 50px;
+}
+
+.foot_link_logo .color_logo {
+    opacity: 0;
+}
+
+.foot_link_logo .color_logo:hover {
+    opacity: 1;
 }
 
 .short_line_blue {

@@ -121,13 +121,13 @@ $(document).ready(function() {
     })
 
     $('.nav_item').mouseover(function() {
-        $('.nav_item').find('span').removeClass('active');
-        $(this).find('span').addClass('active');
+        $('.nav_item').find('.nav_item_title').removeClass('active');
+        $(this).find('.nav_item_title').addClass('active');
         $(this).children('ul').show();
     });
 
     $('.nav_item').mouseout(function() {
-        $(this).find('span').removeClass('active');
+        $(this).find('.nav_item_title').removeClass('active');
         $(this).children('ul').hide();
 
         // 鼠标移开，还原初始标识
