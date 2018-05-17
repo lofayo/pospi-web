@@ -37,6 +37,16 @@ window.onload = function() {
 // 点击导航切换头部背景和底部文本
 
 $(document).ready(function() {
+    /* 判定网站英文或中文版本 */
+    function getVersion(url) {
+        let versionRe = /html-en/;
+        return versionRe.test(url);
+    }
+    if (getVersion(location.href)) {
+        $('.english_version').addClass('version_active')
+    } else {
+        $('.chinese_version').addClass('version_active')
+    }
     // $('.about_us_nav li').click(function() {
     //     $('.about_us_nav li').removeClass('nav_active');
     //     $(this).addClass('nav_active');
@@ -84,6 +94,8 @@ $(document).ready(function() {
         return url.slice(lastSlashIndex + 1);
     }
 
+
+
     var urlIdentification = getURLIdentification(location.href);
 
     $('.nav_item').each(function() {
@@ -91,7 +103,7 @@ $(document).ready(function() {
             $('.nav_item_list').find('a').each(function() {
                 if ($(this).attr('href') === urlIdentification) {
                     // 先标识主导航
-                    $(this).parents('.nav_item').find('span').addClass('active');
+                    $(this).parents('.nav_item').find('.nav_item_title').addClass('active');
 
                     // 再标识对应子导航
                     var $curImg = $(this).children('img');
@@ -107,7 +119,7 @@ $(document).ready(function() {
             })
         } else {
             if ($(this).find('a').attr('href') === urlIdentification) {
-                $(this).find('span').addClass('active');
+                $(this).find('.nav_item_title').addClass('active');
             }
         }
     })
@@ -115,7 +127,7 @@ $(document).ready(function() {
     // 进入页面，获取当前页面导航标识index
     var curNavItemIndex = 0;
     $('.nav_item').each(function() {
-        if ($(this).find('span').hasClass('active')) {
+        if ($(this).find('.nav_item_title').hasClass('active')) {
             curNavItemIndex = $(this).index();
         }
     })
@@ -131,7 +143,7 @@ $(document).ready(function() {
         $(this).children('ul').hide();
 
         // 鼠标移开，还原初始标识
-        $('.nav_item').eq(curNavItemIndex).find('span').addClass('active');
+        $('.nav_item').eq(curNavItemIndex).find('.nav_item_title').addClass('active');
     });
 
     $('.nav_item_list').mouseout(function() {

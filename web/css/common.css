@@ -13,6 +13,52 @@
     src: url("../fonts/PingFangSC-Semibold.ttf");
 }*/
 
+.big_know_more,
+.know_more,
+.hover_up {
+    transition: all .5s;
+}
+
+.big_know_more:hover,
+.know_more:hover,
+.hover_up:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+    transform: translate3d(0, -2px, 0);
+}
+
+.hover_show_bottom:hover {
+    border-bottom: 1px solid #4286F3;
+}
+
+.img_content {
+    /*    width: 40%;
+    max-width: 540px;
+    max-height: 420px;*/
+}
+
+.version_active {
+    border-bottom: 1px solid #4286F3;
+}
+
+.section_content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:nth-child(2n) .section_content {
+    background: #F9F9F9;
+    flex-direction: row-reverse;
+}
+
+.section_content .text_content {
+    max-width: 50%;
+}
+
+
 html {
     font-size: 12px;
     width: 100%;
@@ -163,6 +209,10 @@ header {
     color: #4286F3;
     background: #fff;
     border-radius: 4px;
+}
+
+.nav_item_list a.checked .color_logo {
+    opacity: 1;
 }
 
 .nav_item_list img {
